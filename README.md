@@ -2,10 +2,12 @@
 
 A responsive, single-page website built for a client proposal on November 7, 2026. Prepared by Bridge Pointe Advisory Group.
 
+The shareable proposal preview retains a noindex setting and is available to anyone with its URL.
+
 ## Preview scope
 
-- Existing Femar logo, refreshed white and warm neutral layout, warm gold accents.
-- Interior, exterior, and commercial painting; founder story; service area; FAQ.
+- Existing Femar logo, navy header and estimate panel, brighter gold accents, and an open white layout.
+- Original service categories (Painting, Surface Preparation & Restoration, Specialty Coatings & Finishes); founder story; service area; FAQ.
 - Filterable inspiration gallery with keyboard-accessible image dialog.
 - Responsive navigation, click-to-call/email links, mobile contact bar.
 - Estimate form with native validation and an explicit demonstration result. **It does not send, save, or email submissions.**
@@ -37,6 +39,7 @@ All photos are stored locally in `public/images/`. The image paths, descriptions
 | `exterior.jpg` | Exterior service, inspiration | [Unsplash image](https://images.unsplash.com/photo-1600596542815-ffad4c1539a9) |
 | `kitchen.jpg` | About section, inspiration | [Unsplash image](https://images.unsplash.com/photo-1556912172-45b7abe8b7e1) |
 | `commercial.jpg` | Commercial service, inspiration | [Unsplash image](https://images.unsplash.com/photo-1497366811353-6870744d04b2) |
+| `femar-logo-white.webp` | Header: existing white logo variant, preserved | [Current Femar website asset](https://femarpainting.com/wp-content/uploads/2026/08/logo-variant-white-femar-painting-1536x768.webp) |
 | `femar-logo.webp` | Existing official logo, preserved | [Current Femar website asset](https://femarpainting.com/wp-content/uploads/2026/08/logo-transparent-femar-painting-1536x768.webp) |
 
 Photos are for design inspiration, not a portfolio of Femar work. Replace them with client-approved images, update alt descriptions and source links, then update stock labels and the gallery title as appropriate. Keep the logo's proportions intact.
