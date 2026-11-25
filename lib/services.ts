@@ -22,13 +22,13 @@ export const servicePages: ServicePage[] = [
     summary: "Refresh walls, ceilings, cabinets, and building exteriors with residential or commercial painting from Femar Painting.",
     introTitle: "A fresh coat starts with a good plan.",
     intro: "Faded exteriors, marked walls, or outdated cabinets can make a welcoming space feel tired. Femar Painting discusses the surfaces, finish, and material preferences with you before work begins, then prepares the area for the painting work you approve.",
-    heroImage: "/images/femar/GalleryHomepagePainting03.webp",
+    heroImage: "/images/femar/interior-painting-femar-painting.webp",
     heroAlt: "Painting project photo from Femar Painting's existing website",
     offerings: ["Interior painting", "Exterior painting", "Kitchen cabinet painting", "Ceilings, walls, and trim", "Residential and commercial painting"],
     gallery: [
-      { image: "/images/femar/GalleryHomepagePainting01-scaled.webp", alt: "Painting project photo from Femar Painting's existing website" },
-      { image: "/images/femar/GalleryHomepagePainting02-scaled.webp", alt: "Painting project photo from Femar Painting's existing website" },
-      { image: "/images/femar/GalleryHomepagePainting04-scaled.webp", alt: "Painting project photo from Femar Painting's existing website" },
+      { image: "/images/femar/interior-painting-femar-painting.webp", alt: "Interior painting project from Femar Painting" },
+      { image: "/images/femar/exterior-painting-femar-painting.webp", alt: "Exterior painting project from Femar Painting" },
+      { image: "/images/femar/kitchen-cabinet-painting-femar-painting.webp", alt: "Kitchen cabinet painting project from Femar Painting" },
     ],
     faq: [
       ["What types of painting does Femar Painting provide?", "Femar Painting offers residential and commercial painting, including interior, exterior, kitchen cabinet, and ceiling painting."],
@@ -48,9 +48,9 @@ export const servicePages: ServicePage[] = [
     heroAlt: "Surface preparation project photo from Femar Painting's existing website",
     offerings: ["Surface sanding, scraping, and cleaning", "Drywall repair and related work", "Wallpaper removal", "Texture application", "Post-painting cleanup within the agreed scope"],
     gallery: [
-      { image: "/images/femar/Gallery04-scaled.webp", alt: "Surface preparation project photo from Femar Painting's existing website" },
-      { image: "/images/femar/AboutUsSection-e1792186287657.jpg", alt: "Femar Painting project photo from the existing website" },
-      { image: "/images/femar/Gallery01.webp", alt: "Femar Painting project photo from the existing website" },
+      { image: "/images/femar/surface-preparation-drywall-repair-indiana-femar-painting.webp", alt: "Drywall surface preparation project from Femar Painting" },
+      { image: "/images/femar/wallpaper-removal-femar-painting.webp", alt: "Wallpaper removal project from Femar Painting" },
+      { image: "/images/femar/texture-application-femar-painting.webp", alt: "Wall texture application project from Femar Painting" },
     ],
     faq: [
       ["Can you repair drywall before painting?", "Femar Painting offers drywall repair and related surface work. Describe the area so the work can be discussed for your estimate."],
@@ -66,13 +66,13 @@ export const servicePages: ServicePage[] = [
     summary: "Explore deck and fence restoration, wood staining and sealing, garage epoxy, and floor-finishing options.",
     introTitle: "Not every surface needs ordinary wall paint.",
     intro: "Wood decks, fences, and garage floors face different demands from an interior wall. Tell Femar Painting what the surface is made of and how the area is used, then discuss a finish that fits your project and preferences.",
-    heroImage: "/images/femar/Specialty-coating-and-finishes.jpg",
+    heroImage: "/images/femar/deck-fence-restoration-femar-painting.webp",
     heroAlt: "Specialty coating project photo from Femar Painting's existing website",
     offerings: ["Deck and fence restoration", "Wood staining", "Wood sealing", "Garage epoxy floor painting", "Floor painting and floor installation"],
     gallery: [
-      { image: "/images/femar/Gallery02.webp", alt: "Specialty finish project photo from Femar Painting's existing website" },
-      { image: "/images/femar/Gallery03.webp", alt: "Specialty finish project photo from Femar Painting's existing website" },
-      { image: "/images/femar/Painting-Services.jpg", alt: "Femar Painting project photo from the existing website" },
+      { image: "/images/femar/deck-fence-restoration-femar-painting.webp", alt: "Deck and fence restoration project from Femar Painting" },
+      { image: "/images/femar/epoxy-garage-floor-painting-femar-painting.webp", alt: "Garage floor coating project from Femar Painting" },
+      { image: "/images/femar/floor-painting-femar-painting.webp", alt: "Floor finishing project from Femar Painting" },
     ],
     faq: [
       ["Do you offer epoxy garage floor painting?", "Garage epoxy floor painting is one of Femar Painting's listed specialty services. Share the condition and size of the floor for an estimate."],

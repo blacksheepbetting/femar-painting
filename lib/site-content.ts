@@ -1,8 +1,8 @@
 // Photos and logos collected from Femar Painting's existing website.
 const original = "/images/femar/";
 export const images = {
-  interior: { src: `${original}GalleryHomepagePainting03.webp`, alt: "Femar Painting project photo" },
-  exterior: { src: `${original}GalleryHomepagePainting01-scaled.webp`, alt: "Femar Painting project photo" },
-  kitchen: { src: `${original}GalleryHomepagePainting02-scaled.webp`, alt: "Femar Painting project photo" },
-  commercial: { src: `${original}GalleryHomepagePainting04-scaled.webp`, alt: "Femar Painting project photo" },
+  interior: { src: `${original}interior-painting-femar-painting.webp`, alt: "Freshly painted interior project from Femar Painting" },
+  exterior: { src: `${original}exterior-painting-femar-painting.webp`, alt: "Home exterior painting project from Femar Painting" },
+  kitchen: { src: `${original}kitchen-cabinet-painting-femar-painting.webp`, alt: "Kitchen cabinet painting project from Femar Painting" },
+  commercial: { src: `${original}commercial-painting-femar-painting.webp`, alt: "Commercial painting project from Femar Painting" },
 } as const;
