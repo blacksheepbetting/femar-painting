@@ -1,0 +1,30 @@
+import { ArrowUpRight, Check, MapPin, Phone } from "lucide-react";
+import type { ServicePage } from "../lib/services";
+
+export function ServiceLandingPage({ service }: { service: ServicePage }) {
+  return (
+    <div className="service-page">
+      <a href="#service-main" className="skip-link">Skip to content</a>
+      <div className="topbar"><div className="container"><span><MapPin size={13} /> Painting services throughout Indiana</span><a href="tel:+14637017205">(463) 701-7205 <Phone size={13} /></a></div></div>
+      <header className="header"><div className="container service-header">
+        <a href="/" className="logo-link" aria-label="Femar Painting home"><img src="/images/femar/logo-variant-white-femar-painting-1536x768.webp" alt="Femar Painting LLC" width="160" height="80" /></a>
+        <nav className="service-nav" aria-label="Main navigation"><a href="/#services">Services</a><a href="/#about">About us</a><a href="/#areas">Areas we serve</a></nav>
+        <a className="button button-gold" href="/#contact">Get a free estimate <ArrowUpRight size={17} /></a>
+      </div></header>
+      <main id="service-main">
+        <section className="service-hero"><div className="container service-hero-grid">
+          <div className="service-hero-copy"><a className="service-breadcrumb" href="/#services">All services</a><p className="eyebrow">{service.eyebrow}</p><h1>{service.title}</h1><p className="service-lede">{service.summary}</p><div className="hero-actions"><a className="button button-gold" href="/#contact">Request a free estimate <ArrowUpRight size={18} /></a><a className="text-link" href="tel:+14637017205"><Phone size={15} /> Call (463) 701-7205</a></div><p className="service-proof"><Check size={17} /> Free estimates <span>·</span> Residential and commercial <span>·</span> Across Indiana</p></div>
+          <figure className="service-hero-image"><img src={service.heroImage} alt={service.heroAlt} /><figcaption>Project photography from Femar Painting’s existing website</figcaption></figure>
+        </div></section>
+        <section className="section service-intro"><div className="container service-intro-grid"><div><p className="eyebrow">THE RIGHT STARTING POINT</p><h2>{service.introTitle}</h2></div><div><p>{service.intro}</p><a className="text-link" href="/#contact">Tell us about your project <ArrowUpRight size={17} /></a></div></div></section>
+        <section className="section service-offerings"><div className="container"><div className="section-heading"><div><p className="eyebrow">WHAT WE CAN DISCUSS</p><h2>{service.shortTitle}</h2></div><p>Every project is different.<br />We’ll review the surfaces and requested scope with you.</p></div><div className="offering-grid">{service.offerings.map((offering, index) => <div className="offering" key={offering}><span>0{index + 1}</span><h3>{offering}</h3></div>)}</div></div></section>
+        <section className="section service-gallery"><div className="container"><div className="section-heading"><div><p className="eyebrow">FEMAR PAINTING PHOTOS</p><h2>See the work up close.</h2></div><p>These project images are from the current Femar Painting website.</p></div><div className="service-gallery-grid">{service.gallery.map((item, index) => <figure className={`service-gallery-item service-gallery-item-${index + 1}`} key={item.image}><img src={item.image} alt={item.alt} loading="lazy" /></figure>)}</div></div></section>
+        <section className="section service-process"><div className="container"><p className="eyebrow">HOW IT WORKS</p><div className="section-heading"><h2>From your idea<br />to the finished space.</h2><a className="button button-outline" href="/#contact">Start with a free estimate <ArrowUpRight size={17} /></a></div><div className="steps"><div className="step"><span>01</span><h3>Share what you have in mind.</h3><p>Tell us about the surfaces, location, and result you’re looking for.</p></div><div className="step"><span>02</span><h3>Review the project scope.</h3><p>Discuss preparation, material preferences, timing, and your estimate before approving work.</p></div><div className="step"><span>03</span><h3>Move forward with clarity.</h3><p>Femar Painting completes the work included in the scope you approve.</p></div></div></div></section>
+        <section className="section service-faq"><div className="container faq-grid"><div><p className="eyebrow">PROJECT QUESTIONS</p><h2>Before we<br />get started.</h2><p>Have a different question? <a className="text-link" href="mailto:femarpaintingllc@gmail.com">Email Femar Painting <ArrowUpRight size={15} /></a></p></div><div className="questions">{service.faq.map(([question, answer]) => <details key={question}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div></div></section>
+        <section className="service-final-cta"><div className="container service-final-inner"><div><p className="eyebrow">LET’S TALK ABOUT YOUR PROJECT</p><h2>Ready for a fresh start?</h2><p>Tell us what you want to paint, repair, restore, or refinish.</p></div><div className="service-final-actions"><a className="button button-gold" href="/#contact">Request a free estimate <ArrowUpRight size={18} /></a><a className="service-final-phone" href="tel:+14637017205"><Phone size={16} />(463) 701-7205</a></div></div></section>
+      </main>
+      <footer><div className="container footer-main"><a href="/" aria-label="Femar Painting home"><img src="/images/femar/logo-transparent-femar-painting-1536x768.webp" alt="Femar Painting LLC" width="150" height="75" /></a><p>A fresh look for the spaces<br />that matter to you.</p><a href="/#services">All services</a><a href="/#about">Our story</a><a href="/#contact">Get in touch <ArrowUpRight size={15} /></a></div><div className="container footer-bottom"><span>© 2026 Femar Painting. All rights reserved.</span><span>Project photography from Femar Painting</span></div></footer>
+      <div className="mobile-actions"><a href="tel:+14637017205"><Phone size={17} />Call Femar</a><a href="/#contact">Free estimate <ArrowUpRight size={17} /></a></div>
+    </div>
+  );
+}
