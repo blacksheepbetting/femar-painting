@@ -26,6 +26,9 @@ export const servicePages: ServicePage[] = [
     heroAlt: "Painting project photo from Femar Painting's existing website",
     offerings: ["Interior painting", "Exterior painting", "Kitchen cabinet painting", "Ceilings, walls, and trim", "Residential and commercial painting"],
     gallery: [
+      { image: "/images/femar/GalleryHomepagePainting04-scaled.webp", alt: "Kroger commercial property photo from Femar Painting's portfolio" },
+      { image: "/images/femar/GalleryHomepagePainting02-scaled.webp", alt: "Retail center commercial project photo from Femar Painting's portfolio" },
+      { image: "/images/femar/GalleryHomepagePainting01-scaled.webp", alt: "Commercial storefront project photo from Femar Painting's portfolio" },
       { image: "/images/femar/interior-painting-femar-painting.webp", alt: "Interior painting project from Femar Painting" },
       { image: "/images/femar/exterior-painting-femar-painting.webp", alt: "Exterior painting project from Femar Painting" },
       { image: "/images/femar/kitchen-cabinet-painting-femar-painting.webp", alt: "Kitchen cabinet painting project from Femar Painting" },

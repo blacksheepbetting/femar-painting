@@ -104,9 +104,23 @@
 .area-links a:hover{color:#8e5d13}
 .area-map img{width:100%;height:auto;max-height:310px;object-fit:contain;background:#fff}
 .area-map figcaption{margin-top:8px;color:var(--muted);font-size:10px}
+.commercial-feature{padding:72px 0;background:#091b3d;color:#fff;border-top:4px solid var(--gold)}
+.commercial-feature-grid{display:grid;grid-template-columns:.72fr 1.28fr;align-items:center;gap:56px}
+.commercial-feature-copy>.eyebrow{color:var(--gold)}
+.commercial-feature-copy h2{font-size:clamp(40px,4vw,54px)}
+.commercial-feature-copy>p:not(.eyebrow){max-width:420px;margin-top:20px;color:#d1d8e3;font-size:14px;line-height:1.85}
+.commercial-feature-copy .text-link{margin-top:24px;color:#ffc04d}
+.commercial-photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.commercial-photo{position:relative;height:150px;overflow:hidden;background:#132b4b}
+.commercial-photo-1{grid-column:1/-1;height:270px}
+.commercial-photo img{width:100%;height:100%;transition:transform .45s}
+.commercial-photo:hover img{transform:scale(1.025)}
+.commercial-photo figcaption{position:absolute;left:12px;bottom:12px;padding:7px 10px;background:#071735eF;color:#fff;font-size:10px;letter-spacing:.04em}
+.commercial-swipe-hint{display:none}
 @media(max-width:800px){.area-intro-grid{gap:45px}.area-gallery{gap:14px}.area-gallery-item{height:240px}}
 @media(max-width:800px){.area-coverage-grid{gap:28px}}
 @media(max-width:600px){.cities{grid-template-columns:1fr 1fr;gap:0 16px}.cities a{font-size:11px;padding:13px 0}.area-hero .service-hero-copy h1{font-size:44px}.area-intro-grid{grid-template-columns:1fr;gap:22px}.area-intro h2{font-size:39px}.area-service-grid{grid-template-columns:1fr;gap:12px}.area-service-card{min-height:154px;padding:20px}.area-gallery{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:20px;overscroll-behavior-x:contain;margin:0 -20px;padding:0 20px 16px;scrollbar-width:thin;scrollbar-color:#b9c1cc transparent}.area-gallery-item{height:270px;flex:0 0 87%;scroll-snap-align:start;scroll-snap-stop:always}.area-coverage-grid{grid-template-columns:1fr;gap:28px}.area-links{grid-template-columns:1fr 1fr;gap:0 16px}.area-links a{font-size:11px;min-height:51px}.area-map{max-width:520px;margin:auto}}
+@media(max-width:600px){.commercial-feature{padding:55px 0 60px}.commercial-feature-grid{grid-template-columns:1fr;gap:28px}.commercial-feature-copy h2{font-size:40px}.commercial-feature-copy>p:not(.eyebrow){font-size:13px}.commercial-swipe-hint{display:block;margin-bottom:12px;color:#d1d8e3;font-size:11px}.commercial-photo-grid{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:20px;overscroll-behavior-x:contain;margin:0 -20px;padding:0 20px 16px;scrollbar-width:thin;scrollbar-color:#53647d transparent}.commercial-photo,.commercial-photo-1{height:250px;flex:0 0 87%;grid-column:auto;scroll-snap-align:start;scroll-snap-stop:always}.commercial-photo figcaption{font-size:11px}}
 
 /* Familiar Femar navy and gold, with the open layout of the proposal concept. */
 .topbar{background:#fff;color:var(--ink);border-bottom:1px solid var(--line)}
