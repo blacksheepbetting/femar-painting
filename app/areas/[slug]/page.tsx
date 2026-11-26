@@ -12,9 +12,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const area = getServiceArea(slug);
   if (!area) return {};
   return {
-    title: `${area.title} | Femar Painting`,
+    title: area.title,
     description: area.summary,
-    openGraph: { title: `${area.title} | Femar Painting`, description: area.summary, images: [area.image.src] },
+    alternates: { canonical: `/areas/${area.slug}/` },
+    openGraph: { type: "website", title: `${area.title} | Femar Painting`, description: area.summary, url: `https://femarpainting.com/areas/${area.slug}/`, images: [{ url: area.image.src, alt: area.image.alt }] },
+    twitter: { card: "summary_large_image", title: `${area.title} | Femar Painting`, description: area.summary, images: [area.image.src] },
   };
 }
 
